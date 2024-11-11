@@ -104,7 +104,7 @@ export default function Pricing() {
             </Box>
             
             <Box mx={{ xs: 2, md: 10, }}>
-                <Grid2 container spacing={6} justifyContent="center" my={4} py={2} >
+                <Grid2 container spacing={15} justifyContent="center" my={4} py={2} >
                     {[...Array(4)].map((_, index) => (
                         <React.Fragment key={index}>
                             <Grid2 item xs={12} sm={6} md={4} lg={3}>
@@ -119,7 +119,7 @@ export default function Pricing() {
                                     />
                                 </Box>
                             </Grid2>
-                            {index < 3 && (
+                            {(index < 3 && (index == 2 || index == 0)) && (
                                 <Divider flexItem orientation="vertical" sx={{ height: 'auto', display: { xs: 'none', sm: 'block' } }} />
                             )}
                         </React.Fragment>

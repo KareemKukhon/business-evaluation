@@ -85,10 +85,10 @@ export default function PricingCard({title, price, items, setupAddons, operation
           margin: 'auto',              // Centers the box horizontally in its parent
         }}
       >
-        <Typography color='#8E8E8E' fontSize={16}> 
+        <Typography color='black' fontSize={16}> 
           Total Price: 
         </Typography>
-        <Typography variant='h3' color='#8E8E8E' fontSize={24}>
+        <Typography variant='h3' color='black' fontSize={24}>
           {totalPrice}
         </Typography>
       </Box>

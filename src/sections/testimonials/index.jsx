@@ -92,7 +92,7 @@ const Testimonials = () => {
             </Box>
                 {/* Testimonial Slides Container */}
                 <Box sx={{  height: 400, width: "70%", display: "flex", justifyContent: "center", alignItems: "center", gap: 4 }}>
-                    <Box sx={{ height: 250, width: "60%" }}>
+                    <Box sx={{ height: 250, width: "50%" }}>
                         <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
                             {TestimonialTexts.feedBacks.map((feedBack, index) => (
                                 <Box  key={index}>
