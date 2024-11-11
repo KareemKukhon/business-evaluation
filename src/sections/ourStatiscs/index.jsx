@@ -11,6 +11,7 @@ export default function OurStatistic() {
       alignItems="center"
       textAlign="center"
       width="100%"
+      backgroundColor="#F7F7F7"
     >
       <Typography
         maxWidth="900px"

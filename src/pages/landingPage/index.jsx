@@ -9,6 +9,7 @@ import ImageCarousel from '../../sections/howCanHelp'
 import AutoSlider from '../../sections/howCanHelp'
 import HowCanHelp from '../../sections/howCanHelp'
 import Goal_Report from '../../sections/goal&report'
+import Testimonials from '../../sections/testimonials'
 
 export default class LandingPage extends Component {
   render() {
@@ -21,9 +22,10 @@ export default class LandingPage extends Component {
         <OurStatisc></OurStatisc>
         <br />
         <Pricing/>
-        <HowCanHelp
-        ></HowCanHelp>
+        {/* <HowCanHelp
+        ></HowCanHelp> */}
         <Goal_Report></Goal_Report>
+        <Testimonials></Testimonials>
       </Box> 
         </Box>
     

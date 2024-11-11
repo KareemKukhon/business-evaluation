@@ -93,7 +93,7 @@ export default function PricingCard({title, price, items, setupAddons, operation
         </Typography>
       </Box>
 
-      <Button variant='contained' sx={{ my: 2, px: 8, py: 1.2, backgroundColor: "#FF8D06", color: 'black' }}>
+      <Button variant='contained' sx={{ my: 2, px: 8, py: 1.2, backgroundColor: "#FFFFFD", color: 'black' }}>
         Purchase Now
       </Button>
     </Box>

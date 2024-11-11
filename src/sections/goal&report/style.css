@@ -89,3 +89,65 @@
     backdrop-filter: blur(4px); /* Optional: Adds a blur effect */
     border-radius: 20px;
   }
+
+  /* style.css */
+  .goal-report-box {
+    background-color: #ff8f06e4;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px; /* Ensure enough space for the wave */
+  }
+  
+  .goal-report-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15), transparent);
+    opacity: 0.8;
+    animation: wave-animation 10s linear infinite;
+    transform: translateX(-50%);
+  }
+
+.goal-report-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15), transparent);
+    opacity: 0.8;
+    animation: wave-animation 10s linear infinite;
+    transform: translateX(-50%);
+}
+
+  .typography {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
