@@ -1,0 +1,91 @@
+.powerBi {
+    background-image: url('../../../public/images/powerBi1.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    height: 465px;
+    width: 320px;
+    display: block;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+  }
+
+  .powerBi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    backdrop-filter: blur(4px); /* Optional: Adds a blur effect */
+    border-radius: 20px;
+  }
+
+  .typography{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-120%);
+  }
+  
+  .executiveSummary {
+    background-image: url('../../../public/images/powerBi2.png') !important;
+    background-size: cover;
+    background-position: center;
+    height: 525px;
+    width: 320px;
+    display: block;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+  }
+
+  .executiveSummary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    backdrop-filter: blur(4px); /* Optional: Adds a blur effect */
+    border-radius: 20px;
+  }
+  
+  .singleReport {
+    background-image: url('../../../public/images/powerBi3.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    height: 465px;
+    width: 320px;
+    display: block;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+  }
+
+  .singleReport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    backdrop-filter: blur(4px); /* Optional: Adds a blur effect */
+    border-radius: 20px;
+  }

@@ -1,0 +1,41 @@
+.Background1 {
+  background-image: url('../../../public/images/powerBi1.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100px;
+  display: block;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.Background2 {
+  background-image: url('../../../public/images/powerBi2.png') !important;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 100px;
+  display: block;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.Background3 {
+  background-image: url('../../../public/images/powerBi3.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.Background4 {
+  background-image: url('../../../public/images/userfriendly.png') !important;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100px;
+  background-repeat: no-repeat;
+  display: block;
+}
