@@ -3,11 +3,58 @@ import './App.css';
 import CustomAppBar from './components/header';
 import Hero from './sections/Hero/hero';
 import LandingPage from './pages/landingPage';
+import HomePage from './pages/homePage';
+import CreateMissionPage from './pages/createMissionPage';
+import SurveyForms from './pages/surveyForms';
+import CreateForm from './pages/surveyForms/createForm';
+import AccountSettings from './pages/accountSettings';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CreateMissionButton from './pages/createMissionPage/button';
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/home",
+      element: <HomePage />,
+    },
+    {
+      // path: "/signin",
+      // element: < />,
+    },
+    {
+      // path: "/signup",
+      // element: <SignUpPage />,
+    },
+    {
+      path: "/create-mission",
+      element: <CreateMissionButton />,
+    },
+    {
+      path: "/add-mission",
+      element: <CreateMissionPage />,
+    },
+    {
+      path: "/survey-forms",
+      element: <SurveyForms />,
+    },
+    {
+      path: "/account-settings",
+      element: <AccountSettings />,
+    },
+    {
+      // path: "/history",
+      // element: <TestHestory />,
+    },
+  ]);
+
   return (
     <div className="App">
-      <LandingPage></LandingPage>
+      <RouterProvider router={router} />
     </div>
   );
 }
