@@ -32,7 +32,7 @@ function App() {
     },
     {
       path: "/create-mission",
-      element: <CreateMissionButton />,
+      element: <CreateMissionPage />,
     },
     {
       path: "/add-mission",

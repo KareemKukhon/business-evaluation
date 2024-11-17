@@ -182,10 +182,10 @@ export default class CreateForm extends Component {
       <Box p={3}>
         {/* Header Section */}
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <Typography variant="h4">Add New Form</Typography>
+          <Typography variant="h3" fontSize={24}>Add New Form</Typography>
           <Box display="flex" gap={2}>
-            <Button variant="outlined">Cancel</Button>
-            <Button variant="contained" color="primary">
+            <Button variant="outlined" color="#333">Cancel</Button>
+            <Button variant="contained" sx={{bgcolor: '#FF8D06'}}>
               Save
             </Button>
           </Box>
@@ -275,6 +275,7 @@ export default class CreateForm extends Component {
                 key={index}
                 variant="outlined"
                 fullWidth
+                color="#333"
                 startIcon={tool.icon}
                 onClick={() => this.handleAddTool(tool.type)}
                 sx={{ mb: 1 }}
