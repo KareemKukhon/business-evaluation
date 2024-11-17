@@ -10,6 +10,8 @@ import CreateForm from './pages/surveyForms/createForm';
 import AccountSettings from './pages/accountSettings';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import CreateMissionButton from './pages/createMissionPage/button';
+import EditPersonalProfile from './pages/accountSettings/editPersonalProfile';
+import EditBusinessProfile from './pages/accountSettings/editBusinessProfile';
 
 function App() {
 
@@ -23,12 +25,12 @@ function App() {
       element: <HomePage />,
     },
     {
-      // path: "/signin",
-      // element: < />,
+      path: "/edit-profile",
+      element: <EditPersonalProfile />,
     },
     {
-      // path: "/signup",
-      // element: <SignUpPage />,
+      path: "/edit-business-profile",
+      element: <EditBusinessProfile />,
     },
     {
       path: "/create-mission",

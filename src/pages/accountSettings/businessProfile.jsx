@@ -7,8 +7,26 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import { useNavigate } from 'react-router-dom';
 
 export default function BusinessProfile() {
+
+    const navigate = useNavigate();
+
+const handleEditClick = () => {
+  navigate('/edit-business-profile', {
+    state: {
+        businessName: 'Business Profile',
+        businessCategory: 'Retail',
+        businessDescription: 'Description of the business',
+        website: 'https://example.com',
+        facebook: 'https://facebook.com/example',
+        instagram: 'https://instagram.com/example',
+        linkedin: 'https://linkedin.com/example',
+        x: 'https://twitter.com/example',
+    },
+  });
+};
   return (
     <Box alignItems={'center'}
     width={'100%'}
@@ -17,7 +35,9 @@ export default function BusinessProfile() {
     border= "1px solid rgba(0, 0, 0, 0.1)">
         <Box display={'flex'} justifyContent={'space-between'}>
             <Typography variant='h2' fontSize={20} fontWeight={'bold'}>Profile Info</Typography>
-            <Button sx={{width: 68, height: 32, bgcolor: "#2E8868", gap:1, fontSize: 12}} variant='contained'>
+            <Button 
+            onClick={handleEditClick}
+            sx={{width: 68, height: 32, bgcolor: "#2E8868", gap:1, fontSize: 12}} variant='contained'>
                 <BorderColorOutlinedIcon/>
                 Edit
             </Button>
@@ -32,21 +52,21 @@ export default function BusinessProfile() {
             </Grid2>
             <Grid2 size={6}>
             <BusinessProfileCard
-            title={"Business Name"}
+            title={"Phone Number"}
             body={"Business Profile"}
             icon={<BusinessOutlinedIcon/>}
             />
             </Grid2>
             <Grid2 size={6}>
             <BusinessProfileCard
-            title={"Business Name"}
+            title={"Business Category"}
             body={"Business Profile"}
             icon={<BusinessOutlinedIcon/>}
             />
             </Grid2>
             <Grid2 size={6}>
             <BusinessProfileCard
-            title={"Business Name"}
+            title={"Business Website"}
             body={"Business Profile"}
             icon={<BusinessOutlinedIcon/>}
             />
