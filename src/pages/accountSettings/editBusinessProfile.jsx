@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Box, Button, TextField, Typography, Grid } from '@mui/material';
+import SideNavBar from '../../components/sideNavBar';
 
 export default function EditBusinessProfile() {
   const location = useLocation(); // Access state from navigation
@@ -29,7 +30,10 @@ export default function EditBusinessProfile() {
   };
 
   return (
-    <Box
+    <Box display={'flex'}
+    >
+      <SideNavBar titile={'Account Settings'}/>
+     <Box
       width="100%"
       maxWidth="600px"
       mx="auto"
@@ -128,6 +132,8 @@ export default function EditBusinessProfile() {
       >
         Save Changes
       </Button>
+    </Box> 
     </Box>
+    
   );
 }

@@ -34,7 +34,7 @@ function App() {
     },
     {
       path: "/create-mission",
-      element: <CreateMissionPage />,
+      element: <CreateMissionButton />,
     },
     {
       path: "/add-mission",
@@ -43,6 +43,10 @@ function App() {
     {
       path: "/survey-forms",
       element: <SurveyForms />,
+    },
+    {
+      path: "/add-form",
+      element: <CreateForm />,
     },
     {
       path: "/account-settings",

@@ -19,6 +19,7 @@ import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOut
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import TitleOutlinedIcon from '@mui/icons-material/TitleOutlined';
 import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
+import SideNavBar from "../../components/sideNavBar";
 
 const tools = [
   { label: "Header Text", type: "header", icon: <TitleOutlinedIcon/> },
@@ -179,7 +180,9 @@ export default class CreateForm extends Component {
     const { formName, category, formElements, categories } = this.state;
 
     return (
-      <Box p={3}>
+      <Box display={'flex'}>
+        <SideNavBar titile={'Survey Forms'}/>
+        <Box p={3}>
         {/* Header Section */}
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
           <Typography variant="h3" fontSize={24}>Add New Form</Typography>
@@ -286,6 +289,8 @@ export default class CreateForm extends Component {
           </Paper>
         </Box>
       </Box>
+      </Box>
+      
     );
   }
 }

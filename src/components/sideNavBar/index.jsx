@@ -11,7 +11,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function SideNavBar() {
+export default function SideNavBar({titile}) {
   const [activeItem, setActiveItem] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -67,8 +67,8 @@ export default function SideNavBar() {
             key={index}
             onClick={() => handleItemClick(item.text)}
             sx={{
-              bgcolor: activeItem === item.text.toLowerCase().replace(' ', '-') ? '#ff8d06' : 'inherit',
-              color: activeItem === item.text.toLowerCase().replace(' ', '-') ? '#fff' : 'inherit',
+              bgcolor: (activeItem === item.text.toLowerCase().replace(' ', '-'))||(item.text === titile) ? '#ff8d06' : 'inherit',
+              color: (activeItem === item.text.toLowerCase().replace(' ', '-'))||(item.text === titile) ? '#fff' : 'inherit',
               borderRadius: 2,
               cursor: 'pointer',
               my: 0.3,
@@ -79,7 +79,7 @@ export default function SideNavBar() {
           >
             <ListItemIcon
               sx={{
-                color: activeItem === item.text.toLowerCase().replace(' ', '-') ? '#fff' : 'inherit',
+                color: (activeItem === item.text.toLowerCase().replace(' ', '-'))||(item.text === titile) ? '#fff' : 'inherit',
               }}
             >
               {item.icon}
@@ -99,8 +99,8 @@ export default function SideNavBar() {
             key={index}
             onClick={() => handleItemClick(item.text)}
             sx={{
-              bgcolor: activeItem === item.text.toLowerCase().replace(' ', '-') ? '#ff8d06' : 'inherit',
-              color: activeItem === item.text.toLowerCase().replace(' ', '-') ? '#fff' : 'inherit',
+              bgcolor: (activeItem === item.text.toLowerCase().replace(' ', '-'))||(item.text === titile) ? '#ff8d06' : 'inherit',
+              color: (activeItem === item.text.toLowerCase().replace(' ', '-'))||(item.text === titile) ? '#fff' : 'inherit',
               borderRadius: 2,
               my: 0.3,
               cursor: 'pointer',
